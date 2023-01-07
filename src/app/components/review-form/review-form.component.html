@@ -1,1 +1,27 @@
-<p>review-form works!</p>
+<h2>Your Review</h2>
+<form [formGroup]="reviewForm">
+  <div
+    class="btn-group"
+    role="group"
+    aria-label="Basic radio toggle button group"
+  >
+    <ng-container *ngFor="let rt of ratings; let index = index">
+      <input
+        type="radio"
+        class="btn-check"
+        name="rating"
+        [id]="index"
+        formControlName="rating"
+      />
+      <label class="btn btn-outline-primary" [for]="index">{{ rt }}</label>
+    </ng-container>
+  </div>
+
+  <textarea
+    name="comment"
+    id="comment"
+    rows="3"
+    formControlName="comment"
+    placeholder="Enter your comment here..."
+  ></textarea>
+</form>
