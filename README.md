@@ -2,7 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.2.
 
-# Using Standalone Components to replicate the React Review App
+Using Standalone Components to replicate the React Review App.
+Uses the new strongly typed forms.
 
 # Uses Bootswatch Theming
 
