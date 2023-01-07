@@ -13,4 +13,8 @@ export class HomeComponent {
     { id: 3, comment: 'My Comment goes here', rating: 6.5 },
     { id: 4, comment: 'My Comment goes here', rating: 7.5 },
   ];
+
+  onFormSubmitted(newReview: Review) {
+    this.reviews = [newReview, ...this.reviews];
+  }
 }
